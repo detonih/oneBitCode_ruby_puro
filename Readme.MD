@@ -1,0 +1,1 @@
+These are some of the codes performed during the "Ruby Puro" course of the school One Bit Code.

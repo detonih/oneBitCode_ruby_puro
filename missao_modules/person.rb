@@ -1,7 +1,6 @@
 module Person
   
   class Juridic
-    attr_accessor :nome, :cnpj
 
     def initialize(nome, cnpj)
       @nome = nome

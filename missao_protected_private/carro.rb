@@ -1,11 +1,11 @@
 class Carro
 
-  def initialize (modelo, cor)
+  def initialize(modelo, cor)
   @modelo = modelo
   @cor = cor
   end
 
-  def get_km frase
+  def get_km(frase)
     
   @kilometragem = find_km(frase)
   puts "Um #{@modelo} de cor #{@cor} viaja a #{@kilometragem}"
@@ -14,7 +14,7 @@ class Carro
 
   private
 
-  def find_km frase
+  def find_km(frase)
     @locator = /\d{2,}km\/h/
 
     @locator.match(frase)
@@ -23,6 +23,6 @@ class Carro
 
 end
 
-fusca = Carro.new("Fusca", "amarelo")
+fusca = Carro.new('Fusca', 'amarelo')
 
-fusca.get_km("80km/h")
+fusca.get_km('80km/h')
